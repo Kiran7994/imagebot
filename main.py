@@ -252,7 +252,7 @@ async def broadcast_(c, m):
     await aiofiles.os.remove('broadcast.txt')
 
 
-@Mo_tech_yt.on_message(filters.private & (filters.photo | filters.document))
+@Mo_tech.on_message(filters.private & (filters.photo | filters.document))
 async def getimage(client, message):
     ## --- Users Adder --- ##
     if not await db.is_user_exist(message.from_user.id):
@@ -265,7 +265,7 @@ async def getimage(client, message):
             if user.status == "kicked":
                await client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned!\nNow Your Can't Use Me. Contact my [Support Group](https://t.me/Mo_Tech_Group).",
+                   text="Sorry Sir, You are Banned!\nNow Your Can't Use Me. Contact my [Support Group](https://t.me/linux_repo).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -277,7 +277,7 @@ async def getimage(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🔔Join My Update Channel🔔", url=f"https://t.me/{update_channel}")
+                            InlineKeyboardButton("🔔Join Updates Channel🔔", url=f"https://t.me/{update_channel}")
                         ]
                     ]
                 ),
@@ -287,7 +287,7 @@ async def getimage(client, message):
         except Exception:
             await client.send_message(
                 chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/Mo_Tech_Group).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
