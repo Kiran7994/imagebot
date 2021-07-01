@@ -14,7 +14,6 @@ from telegraph import upload_file
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
-UPDATE_CHANNEL = Credentials.UPDATES_CHANNEL
 
 ## --- Logger --- ##
 logging.basicConfig(level=logging.INFO)
