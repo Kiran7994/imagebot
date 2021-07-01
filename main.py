@@ -65,7 +65,7 @@ else:
 
 **🔻 YouTube : [Subscriber Now YouTube](https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ)**
 
-**✳️ Source : [🤪Click Here](https://github.com/PR0FESS0R-99/MT-Telegram-ph-Bot)**
+**✳️ Source : [🤪Click Here](https://github.com/PR0FESS0R-99/Image-Upload)**
 """
 if Credentials.HOME_MSG:
     help_text = Credentials.HELP_MSG
@@ -146,7 +146,7 @@ async def start(client, message):
                 [
                     InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
                     InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-                    InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/MT-Telegram-ph-Bot")
+                    InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
                 ],
                 [
                     InlineKeyboardButton("🙏Help", callback_data="help"),
@@ -168,7 +168,7 @@ async def help(client, message):
                 [
                     InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
                     InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-                    InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/MT-Telegram-ph-Bot")
+                    InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
                 ],
                 [
                     InlineKeyboardButton("🏠Home", callback_data="home"),
@@ -322,7 +322,7 @@ async def about_meh(_, query):
         [
            InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
            InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/MT-Telegram-ph-Bot")
+           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
         ],
         [
            InlineKeyboardButton("🙏Help", callback_data="help"),
@@ -344,7 +344,7 @@ async def help_meh(_, query):
         [
            InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
            InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/MT-Telegram-ph-Bot")
+           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
         ],
         [
            InlineKeyboardButton("👨‍💼About", callback_data="about"),
@@ -366,7 +366,7 @@ async def go_to_home(_, query):
         [
            InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
            InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/MT-Telegram-ph-Bot")
+           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
         ],
         [
            InlineKeyboardButton("🙏Help", callback_data="help"),
