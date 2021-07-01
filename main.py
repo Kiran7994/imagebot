@@ -97,7 +97,6 @@ async def send_msg(user_id, message):
     except Exception as e:
         return 500, f"{user_id} : {traceback.format_exc()}\n"
 
-
 ## --- Start Handler --- ##
 @Mo_tech_yt.on_message(filters.command("start"))
 async def start(client, message):
