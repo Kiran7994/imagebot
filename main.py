@@ -252,7 +252,7 @@ async def broadcast_(c, m):
     await aiofiles.os.remove('broadcast.txt')
 
 
-@Mo_tech.on_message(filters.private & (filters.photo | filters.document))
+@Mo_tech_yt.on_message(filters.private & (filters.photo | filters.document))
 async def getimage(client, message):
     ## --- Users Adder --- ##
     if not await db.is_user_exist(message.from_user.id):
