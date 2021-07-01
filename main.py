@@ -101,22 +101,6 @@ async def send_msg(user_id, message):
 ## --- Start Handler --- ##
 @Mo_tech_yt.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(client, message):
-    update_channel = UPDATE_CHANNEL
-    if update_channel:
-        try:
-            user = await bot.get_chat_member(update_channel, update.chat.id)
-            if user.status == "kicked out":
-               await update.reply_text("😔 Sorry Dude, You are **🅱︎🅰︎🅽︎🅽︎🅴︎🅳︎ 🤣🤣🤣**")
-               return
-        except UserNotParticipant:
-            #await update.reply_text(f"Join @{update_channel} To Use Me")
-            await update.reply_text(
-                text="<b>🔊 Join Update Channel </b>",
-                reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 💢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💢 ", url=f"t.me/{UPDATE_CHANNEL}")]
-              ])
-            )
-            return
     await message.reply_text(
         f"<b>👋Hello {message.from_user.mention}</b>\n\n<b>I'm a simple Telegraph Uploader bot💯\n\nI can convert gif, image or video(Mp4only) into telegra.ph links\n\nYou must subscribe our YouTube Channel😇</b>",
         reply_markup=InlineKeyboardMarkup(
@@ -232,44 +216,6 @@ async def broadcast_(c, m):
 
 @Mo_tech_yt.on_message(filters.private & (filters.photo | filters.document))
 async def getimage(client, message):
-    ## --- Users Adder --- ##
-    if not await db.is_user_exist(message.from_user.id):
-        await db.add_user(message.from_user.id)
-    ## --- Force Sub --- ##
-    update_channel = Credentials.UPDATES_CHANNEL
-    if update_channel:
-        try:
-            user = await client.get_chat_member(update_channel, message.chat.id)
-            if user.status == "kicked":
-               await client.send_message(
-                   chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned!\nNow Your Can't Use Me. Contact my [Support Group](https://t.me/linux_repo).",
-                   parse_mode="markdown",
-                   disable_web_page_preview=True
-               )
-               return
-        except UserNotParticipant:
-            await client.send_message(
-                chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("🔔Join Updates Channel🔔", url=f"https://t.me/{update_channel}")
-                        ]
-                    ]
-                ),
-                parse_mode="markdown"
-            )
-            return
-        except Exception:
-            await client.send_message(
-                chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
-                parse_mode="markdown",
-                disable_web_page_preview=True
-            )
-            return
     if message.document:
         if not message.document.file_name.endswith(".jpg"):
             return
