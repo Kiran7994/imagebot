@@ -1,9 +1,9 @@
 {
   "name": "Telegram Image Upload Bot",
-  "description": "A bot to Upload Telegram Images to Telegraph by @Mo_Tech_YT",
+  "description": "A bot to Upload Telegram Images to Telegraph by @unlimtedmovie00",
   "repository": "https://github.com/PR0FESS0R-99/Image-Upload",
   "website": "https://t.me/Discovery_Updates",
-  "logo": "https://telegra.ph/file/33adaf8d6c398edf81967.jpg",
+  "logo": "https://telegra.ph/file/6628e6ac7bf0694761462.jpg",
   "keywords": ["telegram", "telegraph", "image-uploader","telegram-bot"],
   "env": {
     "BOT_TOKEN": {
