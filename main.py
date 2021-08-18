@@ -53,15 +53,15 @@ else:
     about_text = """
 **🤖 Name :** **TelegrPh**
 
-**👨‍💼 Creator : @Mo_Tech_YT**
+**👨‍💼 Creator : @uniunioo**
 
 **📣 Language :** `Python3`
 
 **📚 Library :** [📃Pyrogram](https://docs.pyrogram.org/)
 
-**📢 Updates :** **@Mo_Tech_YT**
+**📢 movie channel:** **@Unlimtedmovie00**
 
-**🗣️ Group :** **@Mo_Tech_Group**
+**🗣️ Group :** **@filmgallery0999**
 
 **🔻 YouTube : [Subscriber Now YouTube](https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ)**
 
@@ -79,7 +79,7 @@ else:
 
 **🔻Wait for the link to get generated**
 
-**🤔Any Doubt :- @Mo_Tech_Group**
+**🤔Any Doubt :- @uniunioo**
 """
 async def send_msg(user_id, message):
     try:
@@ -105,9 +105,9 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
-                    InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-                    InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
+                    InlineKeyboardButton("🗣️Group", url="https://telegram.dog/filmgallery0999"),
+                    InlineKeyboardButton("📃Bot List", url="https://t.me/Button_url_bot_bot"),
+                    InlineKeyboardButton("✳️Source", url="https://github.com/Kiran7994/imagebot")
                 ],
                 [
                     InlineKeyboardButton("🙏Help", callback_data="help"),
@@ -127,9 +127,9 @@ async def help(client, message):
        reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
-                    InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-                    InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
+                    InlineKeyboardButton("🗣️Group", url="https://telegram.dog/filmgallery0999"),
+                    InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Unlimtedmovie00"),
+                    InlineKeyboardButton("✳️Source", url="https://github.com/Kiran7994/imagebot")
                 ],
                 [
                     InlineKeyboardButton("🏠Home", callback_data="home"),
@@ -222,7 +222,7 @@ async def getimage(client, message):
     if not os.path.isdir(tmp):
         os.makedirs(tmp)
     img_path = os.path.join(tmp, str(uuid.uuid4()) + ".jpg")
-    dwn = await message.reply_text("🅳︎🅾︎🆆︎🅽︎🅻︎🅾︎🅰︎🅳︎🅸︎🅽︎🅶︎....", True)
+    dwn = await message.reply_text("🅓🅞🅦🅝🅛🅞🅐🅓🅘🅝🅖....", True)
     img_path = await client.download_media(message=message, file_name=img_path)
     await dwn.edit_text("🆄︎🅿︎🅻︎🅾︎🅰︎🅳︎🅸︎🅽︎🅶︎....")
     try:
@@ -243,9 +243,9 @@ def dynamic_data_filter(data):
 async def about_meh(_, query):
     buttons = [
         [
-           InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
-           InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
+           InlineKeyboardButton("🗣️channel", url="https://telegram.dog/unlimtedmovie00"),
+           InlineKeyboardButton("📃Bot List", url="https://telegram.dog/filmgallery0999"),
+           InlineKeyboardButton("✳️Source", url="https://github.com/Kiran7994/imagebot")
         ],
         [
            InlineKeyboardButton("🙏Help", callback_data="help"),
@@ -261,13 +261,13 @@ async def about_meh(_, query):
     )
     await query.answer()
 
-@Mo_tech_yt.on_callback_query(dynamic_data_filter("help"))
+@unlimtedmovie00.on_callback_query(dynamic_data_filter("help"))
 async def help_meh(_, query):
     buttons = [
         [
-           InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
-           InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
+           InlineKeyboardButton("🗣️Group", url="https://telegram.dog/filmgallery0999"),
+           InlineKeyboardButton("📃Bot List", url="https://telegram.dog/unlimtedmovie00"),
+           InlineKeyboardButton("✳️Source", url="https://github.com/Kiran7994/imagebot")
         ],
         [
            InlineKeyboardButton("👨‍💼About", callback_data="about"),
@@ -283,13 +283,13 @@ async def help_meh(_, query):
     )
     await query.answer()
 
-@Mo_tech_yt.on_callback_query(dynamic_data_filter("home"))
+@unlimtedmovie00.on_callback_query(dynamic_data_filter("home"))
 async def go_to_home(_, query):
     buttons = [
         [
-           InlineKeyboardButton("🗣️Group", url="https://telegram.dog/Mo_Tech_Group"),
-           InlineKeyboardButton("📃Bot List", url="https://telegram.dog/Mo_Tech_YT"),
-           InlineKeyboardButton("✳️Source", url="https://github.com/PR0FESS0R-99/Image-Upload")
+           InlineKeyboardButton("🗣️Group", url="https://telegram.dog/filmgallery0999"),
+           InlineKeyboardButton("📃Bot List", url="https://telegram.dog/unlimtedmovie00"),
+           InlineKeyboardButton("✳️Source", url="https://github.com/Kiran7994/imagebothttps://github.com/Kiran7994/imagebot")
         ],
         [
            InlineKeyboardButton("🙏Help", callback_data="help"),
@@ -305,10 +305,10 @@ async def go_to_home(_, query):
     )
     await query.answer()
 
-@Mo_tech_yt.on_callback_query(dynamic_data_filter("closeit"))
+@unlimtedmovie00.on_callback_query(dynamic_data_filter("closeit"))
 async def closeme(_, query):
     await query.message.delete()
     await query.answer()
 
 
-Mo_tech_yt.run()
+Unlimtedmovie00.run()
