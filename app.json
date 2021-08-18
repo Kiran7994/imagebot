@@ -20,7 +20,7 @@
     },
     "UPDATES_CHANNEL": {
       "description": "Any Telegram Channel Username for Force Sub.",
-      "value": "Mo_Tech_YT",
+      "value": "unlimtedmovie00",
       "required": false
     },
     "MONGODB_URI": {
